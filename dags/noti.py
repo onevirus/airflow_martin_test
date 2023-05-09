@@ -5,7 +5,7 @@ from airflow.operators.bash import BashOperator
 from datetime import datetime, timedelta
 
 with DAG(
-    “noti”,
+    "noti",
     start_date=datetime(2023, 5, 5),
     schedule=timedelta(hours=1),
 ) as dag:
